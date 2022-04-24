@@ -12,8 +12,8 @@ void optimal()
     int page_occurence[5];
 
     /*flag1 and flag2 is set to 1 only when no page fault has occured
-    flag3 is set to 1 during page fault and if a particular page is found to be never used
-    in future while searching the page for replacement*/
+    flag3 is set to 1 during page fault and if a particular page is found to never occur in the 
+    remaining part of the reference string*/
     int flag1, flag2, flag3;
 
     //Stores the position of the page that is to be replaced
