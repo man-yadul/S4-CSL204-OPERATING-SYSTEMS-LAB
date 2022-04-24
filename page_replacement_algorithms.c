@@ -148,8 +148,7 @@ void lru()
     int page_occurence[5];
 
     /*flag1 and flag2 is set to 1 only when no page fault has occured
-    flag3 is set to 1 during page fault and if a particular page is found to be never used
-    in future while searching the page for replacement*/
+    flag3 is set to 1 during page fault and if a particular page is found for LRU replacement*/
     int flag1, flag2, flag3;
 
     //Stores the position of the page that is to be replaced
@@ -210,7 +209,7 @@ void lru()
             {
                 /*A value is stored only if a particular page reference 
                 has been found in the reference string. Otherwise, its value is
-                stored as -1 to indicate that the page is no longer used in future*/
+                stored as -1*/
                 page_occurence[j] = -1;
 
                 //Searching for page until the beginning of the reference string
